@@ -1,0 +1,38 @@
+{
+  "name": "annekremer.de",
+  "version": "0.0.1",
+  "description": "Website for annekremer.de",
+  "main": "index.html",
+  "private": true,
+  "scripts": {
+    "dev": "npm run build:all && npm-run-all -p serve watch:css watch:js watch:html",
+    "lint": "eslint src/js",
+    "uglify": "mkdir -p docs/js && uglifyjs src/js/*.js -m -c -o docs/js/app.min.js",
+    "build:css": "node-sass --output-style compressed --include-path sass --include-path node_modules src/sass/style.scss docs/css/style.css",
+    "build:all": "npm-run-all --parallel build:css copy:html copy:fonts",
+    "build:js": "npm-run-all lint uglify",
+    "copy:html": "cp -r src/html/* docs/",
+    "copy:fonts": "cp -r src/fonts docs/",
+    "watch:css": "onchange 'src/sass' -v -- npm run build:css",
+    "watch:js": "onchange 'src/js' -v -- npm run build:js",
+    "watch:html": "onchange 'src/html' -v -- npm run copy:html",
+    "serve": "browser-sync start --server docs --files 'docs/css/*.css, docs/js/*.js, docs/**/*.html, !node_modules/**/*.html'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jehonala/annekremer.de.git"
+  },
+  "author": "Tobi Kremer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jehonala/annekremer.de/issues"
+  },
+  "homepage": "https://github.com/jehonala/annekremer.de#readme",
+  "devDependencies": {
+    "node-sass": "^3.9.0",
+    "npm-run-all": "^3.1.0",
+    "onchange": "^3.0.0",
+    "uglifyjs": "^2.4.10"
+  },
+  "dependencies": {}
+}
