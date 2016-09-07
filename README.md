@@ -1,6 +1,6 @@
 # annekremer.de
 
-> My website
+> My website.
 
 # Authors
 
