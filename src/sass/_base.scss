@@ -1,6 +1,11 @@
 html {
   position: relative;
   min-height: 100%;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 a, a:visited, a:link, a:hover {

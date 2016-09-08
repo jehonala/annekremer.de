@@ -3,14 +3,28 @@
 body {
   background-color: #222;
   color: white;
+  -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 .container {
-  max-width: 48rem;
+  max-width: 40rem;
   padding: 0 1rem;
   margin: 0 auto;
 }
 
 .main-title {
-  transform: translate(0%, 50%);
+  margin-top: 6rem;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3em;
+  width: 100%;
+  padding: 0 1rem;
+  line-height: 3rem;
+  text-align: right;
+  color: $soft-color;
 }
