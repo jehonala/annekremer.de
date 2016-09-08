@@ -1,7 +1,16 @@
+@import 'flexboxgrid-sass/flexboxgrid.scss';
+
 body {
   background-color: #222;
   color: white;
 }
 
 .container {
+  max-width: 48rem;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
+.main-title {
+  transform: translate(0%, 50%);
 }

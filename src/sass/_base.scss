@@ -1,0 +1,14 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+a, a:visited, a:link, a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: $primary-color;
+  transition: color 0.25s;
+}
