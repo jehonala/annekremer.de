@@ -1,7 +1,7 @@
 $font-stack: 'Roboto Slab', Helvetica, Arial, sans-serif;
 $headline-font-stack: 'Pacifico', $font-stack;
 $primary-color: #FF3F5E;
-$soft-color: #666;
-$soft-color-highlight: #888;
+$soft-color: rgba(255, 255, 255, .6);
+$soft-color-highlight: opacify($soft-color, .8);
 
 $break-small: 48em;
