@@ -1,17 +1,81 @@
 <!doctype html>
-<html lang="en">
+<html lang="de">
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="stylesheet" href="/style.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>annekremer.de</title>
+  <title>Anne Kremer – Coaching</title>
+  <meta name="description"
+    content="Coaching mit Anne Kremer: im Gespräch Klarheit finden – für Führung, Zusammenarbeit und den nächsten Schritt." />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/src/css/site.css" />
 </head>
 
 <body>
-  <div id="app">
-    <h1>Anne Kremer</h1>
-  </div>
+  <a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
+
+  <header class="site-header wrap">
+    <a class="brand" href="#">Anne Kremer <span>Coaching</span></a>
+    <nav aria-label="Hauptnavigation">
+      <ul>
+        <li><a href="#ueber-mich">Über mich</a></li>
+        <li><a href="#fortbildung">Fortbildung</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="inhalt">
+    <section class="hero wrap">
+      <div class="hero-text">
+        <h1>Im Gespräch Klarheit finden.</h1>
+        <p class="hero-lead">Für Führung, Zusammenarbeit und den nächsten Schritt.</p>
+        <a class="button" href="mailto:info@annekremer.de?subject=Gespr%C3%A4ch%20anfragen">Gespräch anfragen</a>
+      </div>
+      <div class="duo">
+        <div class="duo-circle duo-circle--mint" aria-hidden="true"></div>
+        <figure class="duo-circle duo-circle--photo">
+          <img src="/anne.jpg" alt="Porträt von Anne Kremer" width="959" height="959" />
+        </figure>
+      </div>
+    </section>
+
+    <section class="section wrap" id="ueber-mich" aria-labelledby="ueber-mich-titel">
+      <h2 id="ueber-mich-titel">Über mich</h2>
+      <div class="section-body">
+        <p class="intro">Ich habe seit über zehn Jahren Erfahrung im Coachingbereich und vertiefe dieses Wissen jetzt in
+          einer Fortbildung.</p>
+        <p>Hauptberuflich arbeite ich als Projektleiterin in der Formatentwicklung im Medienbereich. Dort bringe ich
+          Ideen, Teams und Abläufe zusammen – genau das fließt in meine Coachings ein.</p>
+        <a class="button button--outline" href="#">Mein LinkedIn-Profil</a>
+      </div>
+    </section>
+
+    <section class="section wrap" id="fortbildung" aria-labelledby="fortbildung-titel">
+      <h2 id="fortbildung-titel">Fortbildung</h2>
+      <div class="section-body">
+        <p class="intro">Ich absolviere derzeit die Fortbildung <strong>Führung und Coaching</strong> bei der
+          <strong>DGfC</strong>.
+        </p>
+      </div>
+    </section>
+
+    <section class="contact wrap" id="kontakt" aria-labelledby="kontakt-titel">
+      <div class="contact-panel">
+        <h2 id="kontakt-titel">Kontakt</h2>
+        <p>Schreib mir gern eine E-Mail:</p>
+        <a class="contact-mail" href="mailto:info@annekremer.de">info@annekremer.de</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer wrap">
+    <p>© Anne Kremer</p>
+    <ul>
+      <li><a href="#">Impressum</a></li>
+      <li><a href="#">Datenschutz</a></li>
+    </ul>
+  </footer>
 </body>
 
 </html>
