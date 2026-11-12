@@ -355,3 +355,49 @@ strong {
 .site-footer a:hover {
   color: var(--ink);
 }
+
+/* Legal pages */
+
+.legal {
+  padding-block: clamp(2rem, 6vw, 4rem) var(--section-space);
+}
+
+.legal > * {
+  max-width: 48rem;
+}
+
+.legal h1 {
+  margin-bottom: 2.5rem;
+  font-size: var(--step-2);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.legal section + section {
+  margin-top: 2rem;
+}
+
+.legal h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.0625rem;
+  font-weight: 700;
+}
+
+.legal address {
+  font-style: normal;
+}
+
+.legal a {
+  text-underline-offset: 0.25em;
+}
+
+.legal p + p,
+.legal ul + p,
+.legal p + ul {
+  margin-top: 0.75rem;
+}
+
+.legal ul {
+  padding-left: 1.25rem;
+}
